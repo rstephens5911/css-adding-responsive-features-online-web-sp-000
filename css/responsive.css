@@ -50,6 +50,6 @@
 .border-right {
   border: 0
 }
-#details {
+#details div{
   height: auto
 }
