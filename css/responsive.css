@@ -1,18 +1,13 @@
 /* -- smaller screens -- */
-@media (max-width: 1100px) {
-  body {
+@media only screen and (max-width: 1100px) {
     .wrapper {
       width: 90%;
     }
-
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  .wrapper { width: 90% }
   #social {
     position: absolute;
-    width: 82px 4px;
+    top: 82px;
+    right: 4px;
+    width: auto;
   }
 }
 
@@ -29,9 +24,60 @@
     font-size: 2.2em;
   }
   #social {
-    position: 72px;
+    top: 72px;
   }
-  col-3 p {
+  .col-3 p {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
     column-count: 2;
+  }
+}
+
+/* 750px breakpoint */
+@media only screen and (max-width: 750px) {
+  #navbar nav a {
+  font-size: 0.9em;
+  }
+  .col-3 p {
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  }
+  .col-1, .col-2, .col-3 {
+  width: 100%;
+  margin-left: 0;
+  float: none;
+  }
+  .border-right {
+  border: 0
+  }
+  #details div{
+  height: auto
+  }
+}
+
+/* 700px breakpoint */
+@media only screen and (max-width: 700px) {
+  #navbar nav a {
+    display: none;
+  }
+  #navbar nav a.menu-icon {
+    display: block;
+    float: right;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    width: auto;
+  }
+  #logo {
+    padding: 60px 0 0;
+  }
+  #social {
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #logo h2 {
+    visibility
   }
 }
