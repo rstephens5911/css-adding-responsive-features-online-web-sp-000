@@ -58,8 +58,10 @@
 
 /* 700px breakpoint */
 @media only screen and (max-width: 700px) {
-
-  #navbar {
-
+  #navbar nav a {
+    display: none;
+  }
+  #navbar nav a.menu-icon {
+    
   }
 }
